@@ -1,0 +1,21 @@
+{
+    "name": "Apple Music Tracklist Helper",
+    "description": "Just a few utilities for Apple Music's website.",
+    "version": "0.2.0",
+    "manifest_version": 3,
+    "icons": {
+        "16": "/icons/16x16.png",
+        "32": "/icons/32x32.png",
+        "48": "/icons/48x48.png",
+        "128": "/icons/128x128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://music.apple.com/*"],
+            "js": ["content.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "author": "Reece Dunham",
+    "short_name": "AM TL Helper"
+}

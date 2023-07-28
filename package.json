@@ -1,0 +1,17 @@
+{
+    "name": "am-tracklist-helper",
+    "private": true,
+    "packageManager": "yarn@4.0.0-rc.48",
+    "devDependencies": {
+        "@types/chrome": "^0.0.242",
+        "prettier": "^3.0.0",
+        "typescript": "^5.1.6"
+    },
+    "prettier": {
+        "tabWidth": 4,
+        "semi": false
+    },
+    "scripts": {
+        "prettier": "prettier --write \"**/*.{js,ts,tsx,html,json}\""
+    }
+}
