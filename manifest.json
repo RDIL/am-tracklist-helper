@@ -17,5 +17,6 @@
         }
     ],
     "author": "Reece Dunham",
-    "short_name": "AM TL Helper"
+    "short_name": "AM TL Helper",
+    "homepage_url": "https://github.com/RDIL/am-tracklist-helper"
 }

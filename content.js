@@ -4,8 +4,10 @@
 
 console.log("Tracklist helper: extension activated!")
 
-function styleButton(button) {
+function styleButton(button, display, title) {
     button.classList.add("tracklist-helper-btn")
+    button.title = title
+    button.innerText = display
     button.style.marginLeft = "10px"
     button.style.borderRadius = "5px"
     button.style.border = "none"
@@ -85,8 +87,7 @@ function doTheThing() {
 
     for (const song of songs) {
         const titleButton = document.createElement("button")
-        titleButton.innerText = "CT"
-        styleButton(titleButton)
+        styleButton(titleButton, "CT", "Copy Track Name")
 
         titleButton.addEventListener("click", () => {
             navigator.clipboard.writeText(song.innerText)
@@ -108,8 +109,7 @@ function doTheThing() {
         let artistNameString = getArtistNames(artists)
 
         const artistButton = document.createElement("button")
-        artistButton.innerText = "CA"
-        styleButton(artistButton)
+        styleButton(artistButton, "CA", "Copy Artist Name")
 
         artistButton.addEventListener("click", () => {
             navigator.clipboard.writeText(artistNameString)
