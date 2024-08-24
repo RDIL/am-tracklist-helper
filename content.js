@@ -8,7 +8,7 @@ function styleInlineButton(button, display, title) {
     button.classList.add("tracklist-helper-btn")
     button.title = title
     button.innerText = display
-    button.style.marginLeft = "10px"
+    button.style.flex = "0 0 auto"
     button.style.borderRadius = "5px"
     button.style.border = "none"
     button.style.backgroundColor = "#1db954"
@@ -16,6 +16,15 @@ function styleInlineButton(button, display, title) {
     button.style.padding = "5px"
     button.style.cursor = "pointer"
     button.style.maxWidth = "30px"
+}
+
+function createButtonHolder() {
+    const buttonHolder = document.createElement("div")
+    buttonHolder.style.display = "flex"
+    buttonHolder.style.flexDirection = "row"
+    buttonHolder.style.justifyContent = "flex-end"
+    buttonHolder.style.gap = "10px"
+    return buttonHolder
 }
 
 /**
@@ -39,7 +48,7 @@ function createButton(innerText, buttonClass, outerClasses = []) {
  * Creates the copy tracklist + copy album artists buttons, styling
  * them to match the other primary action buttons. Apple Music uses
  * Svelte, so the class names are subject to change.
- * @returns {[HTMLDivElement, HTMLDivElement]}
+ * @returns {[Element, Element]}
  */
 function createPrimaryActionButtons() {
     const selectorPlay = ".primary-actions__button--play"
@@ -117,9 +126,12 @@ function run() {
             navigator.clipboard.writeText(song.innerText)
         })
 
+        const buttonHolder = createButtonHolder()
+
         tracklistString += `${song.innerText}`
 
-        song.parentElement.appendChild(titleButton)
+        song.parentElement.parentElement.appendChild(buttonHolder)
+        buttonHolder.appendChild(titleButton)
 
         const artists = song.parentElement.parentElement.querySelectorAll(".songs-list-row__by-line span")
 
@@ -139,7 +151,7 @@ function run() {
 
         tracklistString += ` - ${artistNameString}\n`
 
-        song.parentElement.appendChild(artistButton)
+        buttonHolder.appendChild(artistButton)
     }
 
     // create a button to copy the entire tracklist
