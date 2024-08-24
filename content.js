@@ -128,8 +128,6 @@ function run() {
 
         const buttonHolder = createButtonHolder()
 
-        tracklistString += `${song.innerText}`
-
         song.parentElement.parentElement.appendChild(buttonHolder)
         buttonHolder.appendChild(titleButton)
 
@@ -149,7 +147,7 @@ function run() {
             navigator.clipboard.writeText(artistNameString)
         })
 
-        tracklistString += ` - ${artistNameString}\n`
+        tracklistString += `${artistNameString} - ${song.innerText}\n`
 
         buttonHolder.appendChild(artistButton)
     }
