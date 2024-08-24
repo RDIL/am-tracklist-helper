@@ -128,10 +128,17 @@ function run() {
 
         const buttonHolder = createButtonHolder()
 
-        song.parentElement.parentElement.appendChild(buttonHolder)
+        let attachTo = song.parentElement.parentElement
+
+        // explicit songs have a different DOM structure
+        if (song.parentElement.parentElement.className.includes("songs-list-row__explicit-wrapper")) {
+            attachTo = attachTo.parentElement
+        }
+
+        attachTo.appendChild(buttonHolder)
         buttonHolder.appendChild(titleButton)
 
-        const artists = song.parentElement.parentElement.querySelectorAll(".songs-list-row__by-line span")
+        const artists = attachTo.querySelectorAll(".songs-list-row__by-line span")
 
         if (artists.length < 1) {
             tracklistString += "\n"
