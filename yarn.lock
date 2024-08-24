@@ -5,13 +5,13 @@ __metadata:
   version: 8
   cacheKey: 10
 
-"@types/chrome@npm:^0.0.242":
-  version: 0.0.242
-  resolution: "@types/chrome@npm:0.0.242"
+"@types/chrome@npm:^0.0.270":
+  version: 0.0.270
+  resolution: "@types/chrome@npm:0.0.270"
   dependencies:
     "@types/filesystem": "npm:*"
     "@types/har-format": "npm:*"
-  checksum: 987be17ac208a44782d7c07bb21741147bf31f513a454e39fdccde7a5757cd503daeea01c8a58860e08d29ebd93227007c2fc4a374e1fa507ffcd2d93d5e4597
+  checksum: 10/7d5e350dbfb58b4bbab67df83324f353e97c78171ec3df3d37ea2fd57fc2011311fa8cc91ba98d54d0f989716076777a39b125a0782109646faca94853984522
   languageName: node
   linkType: hard
 
@@ -20,21 +20,21 @@ __metadata:
   resolution: "@types/filesystem@npm:0.0.32"
   dependencies:
     "@types/filewriter": "npm:*"
-  checksum: f0ddbd38519480fbf08be803e983c26ce2f5dd373f8285c87763f615ed2b56ace9ad0411c7fd45a358217dbacf4adfdbcda61fcab0269b04d0037c8dd4dfa7c0
+  checksum: 10/f0ddbd38519480fbf08be803e983c26ce2f5dd373f8285c87763f615ed2b56ace9ad0411c7fd45a358217dbacf4adfdbcda61fcab0269b04d0037c8dd4dfa7c0
   languageName: node
   linkType: hard
 
 "@types/filewriter@npm:*":
   version: 0.0.29
   resolution: "@types/filewriter@npm:0.0.29"
-  checksum: bbad0faade291f375f670fff7e95a9eab6bd67315c978f31ce3bb047be418fcc2d9c56b6eeebd1599d7128f0faa43ae3f5f709e6f53d2130eb022fbe32d63c1e
+  checksum: 10/bbad0faade291f375f670fff7e95a9eab6bd67315c978f31ce3bb047be418fcc2d9c56b6eeebd1599d7128f0faa43ae3f5f709e6f53d2130eb022fbe32d63c1e
   languageName: node
   linkType: hard
 
 "@types/har-format@npm:*":
   version: 1.2.10
   resolution: "@types/har-format@npm:1.2.10"
-  checksum: 8e6fb65a70129d0999e782e4f06c419a26eacf5a9fdd9efff19d3603edbfc82cac76d9ea4d1dfa0f1827de36075dbabc86510d79a4034cc4dff232671dbed296
+  checksum: 10/8e6fb65a70129d0999e782e4f06c419a26eacf5a9fdd9efff19d3603edbfc82cac76d9ea4d1dfa0f1827de36075dbabc86510d79a4034cc4dff232671dbed296
   languageName: node
   linkType: hard
 
@@ -42,37 +42,37 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "am-tracklist-helper@workspace:."
   dependencies:
-    "@types/chrome": "npm:^0.0.242"
-    prettier: "npm:^3.0.0"
-    typescript: "npm:^5.1.6"
+    "@types/chrome": "npm:^0.0.270"
+    prettier: "npm:^3.3.3"
+    typescript: "npm:^5.5.4"
   languageName: unknown
   linkType: soft
 
-"prettier@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "prettier@npm:3.0.0"
+"prettier@npm:^3.3.3":
+  version: 3.3.3
+  resolution: "prettier@npm:3.3.3"
   bin:
     prettier: bin/prettier.cjs
-  checksum: 399292638280988ecd44db6532e908246b7c9468e6f5f571b3835a5206b7f1132cb674c12be430d921474901dc85398429dfd2dc31b282eef9affebd3ce72cef
+  checksum: 10/5beac1f30b5b40162532b8e2f7c3a4eb650910a2695e9c8512a62ffdc09dae93190c29db9107fa7f26d1b6c71aad3628ecb9b5de1ecb0911191099be109434d7
   languageName: node
   linkType: hard
 
-"typescript@npm:^5.1.6":
-  version: 5.1.6
-  resolution: "typescript@npm:5.1.6"
+"typescript@npm:^5.5.4":
+  version: 5.5.4
+  resolution: "typescript@npm:5.5.4"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: f347cde665cf43dc4c1c7d9821c7d9bbec3c3914f4bdd82ee490e9fb9f6d99036ed8666463b6a192dd005eeef333c5087d5931bdd51ec853436ff9a670a7417e
+  checksum: 10/1689ccafef894825481fc3d856b4834ba3cc185a9c2878f3c76a9a1ef81af04194849840f3c69e7961e2312771471bb3b460ca92561e1d87599b26c37d0ffb6f
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A^5.1.6#optional!builtin<compat/typescript>":
-  version: 5.1.6
-  resolution: "typescript@patch:typescript@npm%3A5.1.6#optional!builtin<compat/typescript>::version=5.1.6&hash=5da071"
+"typescript@patch:typescript@npm%3A^5.5.4#optional!builtin<compat/typescript>":
+  version: 5.5.4
+  resolution: "typescript@patch:typescript@npm%3A5.5.4#optional!builtin<compat/typescript>::version=5.5.4&hash=379a07"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: f5481fa3ba0eee8970f46708d13c05650a865ad093b586fc9573f425c64c57ca97e3308e110bb528deb3ccebe83f6fd7b5a8ac90018038da96326a9ccdf8e77c
+  checksum: 10/746fdd0865c5ce4f15e494c57ede03a9e12ede59cfdb40da3a281807853fe63b00ef1c912d7222143499aa82f18b8b472baa1830df8804746d09b55f6cf5b1cc
   languageName: node
   linkType: hard
